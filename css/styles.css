@@ -95,7 +95,6 @@ header ul li a {
     align-items: center;
     color: #fff;
     text-decoration: none;
-
 }
 
 header ul li a:hover {
@@ -107,19 +106,57 @@ a:hover {
     text-decoration: none;
 }
 
+
+/* MOBILE MENU */
+
+.menu {
+    width: 200px;
+    background: grey;
+    height: 80vh;
+    position: absolute;
+    top: 0;
+    right:0;
+    transition: 0.5s;
+    transform: translate(0px, 0px);
+}
+
+.mobile-links ul{
+    display: block;
+    margin: 0;
+    
+}
+
+.closed {
+    transform: translate(500px, 0px);
+    
+}
+
+
+#close-button {
+    background: transparent;
+    border: none;
+   
+}
+
+#close-button i {
+    color: #fff;
+}
+
 .hamburger-icon {
     display: none;
     background: transparent;
     border: none;
 }
 
-.hamburger-icon a {
+.hamburger-icon i {
     color: #fff;
 }
 
-.hamburger-icon a:hover {
+.hamburger-icon i:hover {
     color: #3f3f3f;
 }
+
+
 
 
 @media screen and (max-width:600px){
@@ -141,6 +178,7 @@ a:hover {
 
 
 
+
 /* * * * * * * * * * * * * * * * * * * * *
 Hero
 * * * * * * * * * * * * * * * * * * * * */
@@ -159,6 +197,7 @@ Hero
         url(../img/hero-background.jpg);
     background-position: 80% 30%;
     background-size: cover;
+    z-index: -100;
 
 }
 

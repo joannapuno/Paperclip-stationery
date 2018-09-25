@@ -43,9 +43,6 @@ ul li {
 }
 
 
-.full-screen-hero {
-    position: relative;
-}
 
 /* * * * * * * * * * * * * * * * * * * * *
 Header
@@ -53,11 +50,15 @@ Header
 
 header {
     height: 66px;
+    background: rgb(246,96,233);
+    background: 
+        linear-gradient(354deg, 
+        #f660e9 0%, 
+        #6056c6 50%);
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     padding-bottom: 5px;
     padding-left: 20px;
-    background: rgba(0, 0, 0, 0);
 }
 
 .logo {
@@ -72,7 +73,7 @@ header {
 .logo span {
     font-size: 16px;
     margin-left: 5px;
-    color: purple;
+    color: #fff;
 
 }
 
@@ -94,8 +95,9 @@ header ul li a {
     padding: 0 20px;
     display: flex;
     align-items: center;
-    color: purple;
+    color: #fff;
     text-decoration: none;
+
 }
 
 header ul li a:hover {
@@ -119,6 +121,7 @@ a:hover {
     right:0;
     transition: 0.5s;
     transform: translate(0px, 0px);
+    z-index: 100;
 }
 
 .mobile-links ul{
@@ -186,32 +189,26 @@ Hero
 
 
 .hero {
-    height: 600px;
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
+    height: 650px;
     padding: 50px 50px 5px 50px;
     color: rgb(110, 110, 110);
-    background: linear-gradient(
-                180deg,rgba(0,0,0,0),  
-                transparent, white 98%
-            ),
-                url('../img/hero-background.jpg');
-    background-position: 20% 90%;;
+    background-image: 
+    linear-gradient(90deg, 
+            rgba(161, 161, 161, 0.4), 
+            rgba(0,0,0,0.0)), 
+        url(../img/hero-background.jpg);
+    background-position: 80% 30%;
     background-size: cover;
-    
-    
-    
+  
 
 }
 
 
 .hero-content {
-    width: 100%;
-    margin-top: 100px;
+    width: 40%;
+    margin-top: 120px;
     margin-left: 80px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     
 }
 

@@ -549,11 +549,9 @@ main .products-box hr {
     left: 0;
     right: 0;
     bottom: -10px;
-    background: pink;
 }
 
 .contact {
-    background: red;
     padding: 50px 0;
 }
 
@@ -561,7 +559,6 @@ main .products-box hr {
     display: flex;
     flex-direction: column;
     width: 50%;
-    background: pink;
     text-align: left;
 
 }

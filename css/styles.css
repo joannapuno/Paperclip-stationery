@@ -12,8 +12,18 @@ General
 }
 
 h1 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Playfair Display', cursive;
 }
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    margin-top: 5px;
+    text-align: center;
+     
+}
+
 
 ul li {
     list-style: none;
@@ -42,6 +52,25 @@ ul li {
       
 }
 
+.paperclip-button {
+    margin: 20px 10px 10px;
+}
+
+.paperclip-button button {
+    color: #fff;
+    border:none;
+    background: #cf1e43;
+    padding: 5px 10px;
+    margin-top: 0px;
+}
+
+
+button:hover {
+    cursor: pointer;
+    background: #980021;
+    color: #fff;
+}
+
 
 
 /* * * * * * * * * * * * * * * * * * * * *
@@ -50,7 +79,7 @@ Header
 
 header {
     height: 66px;
-    background: rgb(246,96,233);
+    background: #f660e9;
     background: 
         linear-gradient(354deg, 
         #f660e9 0%, 
@@ -59,11 +88,11 @@ header {
     font-weight: 300;
     padding-bottom: 5px;
     padding-left: 20px;
+
 }
 
 .logo {
     margin-right: auto;
- 
 }
 
 .logo i {
@@ -74,21 +103,18 @@ header {
     font-size: 16px;
     margin-left: 5px;
     color: #fff;
-
 }
 
 header ul {
     margin-bottom: 0;
     display: flex;  
     list-style: none; 
-    font-size: 15px;
-        
+    font-size: 15px;        
 }
 
 header li {
     margin-right: 20px;
 }
-
 
 header ul li a {
     height: 66px;
@@ -114,27 +140,43 @@ a:hover {
 
 .menu {
     width: 200px;
-    background: grey;
-    height: 80vh;
+    opacity: 0.9;
+    background: 
+        linear-gradient(354deg, 
+        #f660e9 0%, 
+        #6056c6 80%);
+    height: 60vh;
     position: absolute;
     top: 0;
     right:0;
     transition: 0.5s;
     transform: translate(0px, 0px);
     z-index: 100;
+    padding: 10px;
 }
 
-.mobile-links ul{
-    display: block;
-    margin: 0;
-    
+
+.menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0; 
+}
+.menu li { 
+    padding: 0; 
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #fff;
+}
+
+.menu li:hover {
+    background: rgb(216, 216, 216);
 }
 
 .closed {
     transform: translate(500px, 0px);
     
 }
-
 
 #close-button {
     background: transparent;
@@ -160,9 +202,6 @@ a:hover {
     color: #3f3f3f;
 }
 
-
-
-
 @media screen and (max-width:600px){
     header ul {
         display: none;
@@ -177,11 +216,7 @@ a:hover {
     .logo i {
         color: pink;
     }
-
 }
-
-
-
 
 /* * * * * * * * * * * * * * * * * * * * *
 Hero
@@ -199,19 +234,13 @@ Hero
             rgba(0,0,0,0.0)), 
         url(../img/hero-background.jpg);
     background-position: 80% 30%;
-    background-size: cover;
-  
-
+    background-size: cover; 
 }
-
-
 .hero-content {
     width: 40%;
     margin-top: 120px;
-    margin-left: 80px;
-    
+    margin-left: 80px;    
 }
-
 .hero h1 {
     font-family: 'Playfair Display',serif;
     font-size: 4em;
@@ -220,13 +249,10 @@ Hero
     color: #646464;
     margin-bottom: 10px;
 }
-
 .hero p {
     margin-left: 5px;
     text-align: left;
 }
-
-
 .hero button {
     color: #fff;
     border:none;
@@ -234,13 +260,11 @@ Hero
     padding: 10px 20px;
     margin-top: 10px;
 }
-
 .hero button:hover {
     cursor: pointer;
     background: #980021;
     color: #fff;
 }
-
 
 @media screen and (max-width: 600px) {
     .hero {
@@ -282,12 +306,9 @@ Hero
        
     }
     .hero-content h1 {
-        margin-bottom:50px;
-        
-    }
-    
+        margin-bottom:50px;      
+    }   
 }
-
 
 
  /*SCROLL-DOWN-HOMEPAGE*/
@@ -297,8 +318,7 @@ Hero
      display: flex;
      flex-direction: column;
      justify-content: flex-end;
-     align-items: center;
-    
+     align-items: center;   
      
  }
 
@@ -308,16 +328,13 @@ Hero
      letter-spacing: 0.3em;
      color: rgb(0, 0, 0);
      margin: 0;
-     font-weight: 400;
-     
-    
+     font-weight: 400;   
  }
 
  .menu-scroll-down a {
      color: #cf1e43;
  }
  
-
  @media screen and (max-width: 600px) {
      .menu-scroll-down {
          padding-bottom: 80px;
@@ -328,7 +345,6 @@ Hero
      }
  }
      
-
  @media screen and (max-width:481px) {
 
     .menu-scroll-down {
@@ -348,25 +364,13 @@ Hero
 Main
 * * * * * * * * * * * * * * * * * * * * */
 
-
 main {
     min-height: 600px;
     padding: 15px 0px 0px;
     width: 100%;
-    margin: 30px 0px auto;
-    
+    margin: 30px 0px auto;  
 }
-
-* main h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.5em;
-    margin-bottom: 30px;
-    margin-top: 5px;
-    text-align: center;
-     
-}
-
-
+/* HOMEPAGE */
 /* Products Block */
 
 .products-block {
@@ -446,25 +450,6 @@ main .products-box hr {
     
 }
 
-.paperclip-button {
-    margin: 20px 10px 10px;
-}
-
-.paperclip-button button {
-    color: #fff;
-    border:none;
-    background: #cf1e43;
-    padding: 5px 10px;
-    margin-top: 0px;
-}
-
-
-.paperclip-button button:hover {
-    cursor: pointer;
-    background: #980021;
-    color: #fff;
-}
-
 
 .products-image-grid {
     margin: 0;
@@ -499,9 +484,57 @@ main .products-box hr {
 @media screen and (max-width: 481px) {
 
     .welcome-content {
-        padding: 50px 20px;
-       
+        padding: 50px 20px;      
     }
+}
+
+/* ABOUT PAGE */
+
+/* HERO */
+.about-hero {
+    background: url(../img/hero-background.jpg);
+    height: 300px;
+    background-size: cover;
+    margin: 0;
+    position: relative;
+}
+
+.about-hero-content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: pink;
+}
+
+
+/* MAIN */
+.about {
+    padding: 50px 0;
+}
+
+
+.bio-card {
+    display: flex;
+}
+
+.bio-image {
+    background: black;
+    height:300px;
+    width: 500px;
+    width: 100%;
+    margin: 10px 20px;
+}
+.bio-content h6 {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #4d4d4d;
+    text-align: left;
+}
+
+.bio-content p {
+    text-align: left;
 }
 
 

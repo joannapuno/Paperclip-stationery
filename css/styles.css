@@ -556,6 +556,15 @@ main .products-box hr {
     background: red;
     padding: 50px 0;
 }
+
+.contact-card {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background: pink;
+    text-align: left;
+
+}
 .contact-content {
     width: 100%;
     display: flex;
@@ -594,15 +603,7 @@ main .products-box hr {
     margin: 10px 20px;
 }
 
-.contact-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
-    background: pink;
-    text-align: left;
 
-}
 
 
 

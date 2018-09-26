@@ -6,7 +6,7 @@ General
 } */
 
 .wrapper {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   max-width: 1000px;
 }
@@ -593,8 +593,55 @@ main .products-box hr {
     margin: 10px 20px;
 }
 
+/* PRODUCTS PAGE */
+
+.products {
+    background: pink;
+}
+.products .products-content { 
+    margin: 10px 10px;
+    padding: 5px;
+    flex-basis: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: red;
+
+}
+
+.products .products-content h6, p {
+    margin: 10px;
+}
+
+.products .products-content h6 {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #4d4d4d;
+    text-align: center;
+}
 
 
+
+.products .products-content  img {
+    background: purple;
+    height: 200px;
+    width: 250px;
+    margin: 10px auto;
+}
+
+.products .products-content  p {
+    font-family: 'Roboto' sans-serif;
+    font-size: 15px;
+    line-height: 1.5em;
+
+}
+
+.products .products-content  hr {
+    border: 0.5px solid #3f3f3f64;
+    width: 30px;
+    margin: 5px auto;
+}
 
 
 

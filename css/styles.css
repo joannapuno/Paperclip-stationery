@@ -606,6 +606,7 @@ main .products-box hr {
     flex-direction: column;
     align-items: center;
     background: red;
+    
 
 }
 
@@ -623,11 +624,11 @@ main .products-box hr {
 
 
 
-.products .products-content  img {
+.products-content img {
     background: purple;
     height: 200px;
     width: 250px;
-    margin: 10px auto;
+    margin: 10px auto   
 }
 
 .products .products-content  p {

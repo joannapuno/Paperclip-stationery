@@ -506,8 +506,9 @@ main .products-box hr {
 }
 
 .about {
-    padding: 50px 0;
+    padding: 50px 100px;
     max-height: 700px;
+    display: flex;
 }
 
 
@@ -515,23 +516,28 @@ main .products-box hr {
     display: flex;
 }
 
-.bio-image {
-    background: black;
-    height:300px;
-    width: 500px;
-    width: 100%;
-    margin: 10px 20px;
+.about-image {
+    width: 50%; 
+    margin-bottom: 50px;  
 }
+
+.about img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
 .bio-content h6 {
     font-family: 'Playfair Display', sans-serif;
     font-size: 30px;
     font-weight: 400;
     color: #4d4d4d;
     text-align: left;
+    margin-top: 0;
 }
 
 .bio-content p {
     text-align: left;
+    margin-bottom: 50px;
 }
 
 /* CONTACT PAGE */
@@ -595,17 +601,37 @@ main .products-box hr {
 
 /* PRODUCTS PAGE */
 
-.products {
-    background: pink;
+.product-hero {
+    background: url(../img/hero-background.jpg);
+    height: 400px;
+    background-size: cover;
+    margin: 0;
+    position: relative;
+    
 }
+
+.product-hero-content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -10px;
+}
+
+.products {
+    padding: 30px 100px;
+   
+}
+
 .products .products-content { 
-    margin: 10px 10px;
-    padding: 5px;
+    margin: 10px 50px 80px;
+    padding: 10px;
     flex-basis: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: red;
+    background: #fff;
+    box-shadow: 0px 0px 8px 0px #dedede;
+    border-radius: 10px;
     
 
 }
@@ -620,6 +646,7 @@ main .products-box hr {
     font-weight: 700;
     color: #4d4d4d;
     text-align: center;
+    
 }
 
 
@@ -628,7 +655,7 @@ main .products-box hr {
     background: purple;
     height: 200px;
     width: 250px;
-    margin: 10px auto   
+    margin: 20px auto;  
 }
 
 .products .products-content  p {

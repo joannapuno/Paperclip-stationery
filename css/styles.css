@@ -487,22 +487,31 @@ main .products-box hr {
 
 /* ABOUT PAGE */
 .about-hero {
-    background: url(../img/hero-background.jpg);
-    height: 400px;
+    background: url(../img/img8.jpg);
+    height: 200px;
     background-size: cover;
     margin: 0;
     position: relative;
+    
 }
 
 .about-hero-content {
     position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -10px;
-    background: pink;
+    left: 600px;
+    right: 600px;
+    bottom: -25px;
+    background:#fff;
+    padding: 0;
+}
+
+.about-hero-content h2 {
+    margin: 10px;
+    font-size: 20px;
+    color: #222;
 }
 
 .about {
+    margin-top: 80px;
     padding: 50px 100px;
     max-height: 700px;
     display: flex;

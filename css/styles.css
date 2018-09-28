@@ -182,17 +182,17 @@ a:hover {
     color: #fff;
 }
 
-.hamburger-icon {
+#hamburger-button {
     display: none;
     background: transparent;
     border: none;
 }
 
-.hamburger-icon i {
+#hamburger-button i {
     color: #fff;
 }
 
-.hamburger-icon i:hover {
+#hamburger-button i:hover {
     color: #3f3f3f;
 }
 
@@ -203,7 +203,7 @@ a:hover {
     header ul {
         display: none;
     }
-    .hamburger-icon {
+    #hamburger-button {
         display: block;
         color: #fff;
     }

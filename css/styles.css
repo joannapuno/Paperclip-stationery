@@ -45,27 +45,19 @@ ul li {
 
 }
 
-.dotted-line {
-    border-top: 6px dotted #cf1e43;
-    width: 80px;
-    margin: 40px auto;
-      
-}
 
-.paperclip-button {
-    margin: 20px 10px 10px;
-}
 
-.paperclip-button button {
+button {
     color: #fff;
     border:none;
     background: #cf1e43;
     padding: 5px 10px;
     margin-top: 0px;
+    margin: 20px 10px 10px;
 }
 
 
-.paperclip-button button:hover {
+button:hover {
     cursor: pointer;
     background: #980021;
     color: #fff;
@@ -368,7 +360,7 @@ main {
     min-height: 600px;
     padding: 15px 0px 0px;
     width: 100%;
-    margin: 30px 0px auto;  
+    margin: 30px auto 0;  
 }
 /* HOMEPAGE */
 /* Products Block */
@@ -783,7 +775,6 @@ Footer
 * * * * * * * * * * * * * * * * * * * * */
 .zigzag {
     background:url(../img/zigzag-bg.svg);
-    
     height: 10px;
     position: relative;
     top: -10px;

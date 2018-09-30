@@ -92,6 +92,8 @@ header {
 }
 
 .logo span {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
     font-size: 16px;
     margin-left: 5px;
     color: #fff;
@@ -224,11 +226,11 @@ Hero
     background-attachment: fixed;
     height: 650px;
     padding: 50px 50px 5px 50px;
-    color: rgb(110, 110, 110);
+    color: #6e6e6e;
     background-image: 
     linear-gradient(90deg, 
-            rgba(161, 161, 161, 0.4), 
-            rgba(0,0,0,0.0)), 
+            #a1a1a166, 
+            #00000000), 
         url(../img/hero-background.jpg);
     background-position: 80% 30%;
     background-size: cover; 
@@ -306,54 +308,6 @@ Hero
         margin-bottom:50px;      
     }   
 }
-
-
- /*SCROLL-DOWN-HOMEPAGE*/
-
- .menu-scroll-down {
-     height: 200px;
-     display: flex;
-     flex-direction: column;
-     justify-content: flex-end;
-     align-items: center;   
-     
- }
-
- .menu-scroll-down h6 {
-     font-family: 'Playfair Display', sans-serif;
-     font-size: 12px;
-     letter-spacing: 0.3em;
-     color: rgb(0, 0, 0);
-     margin: 0;
-     font-weight: 400;   
- }
-
- .menu-scroll-down a {
-     color: #cf1e43;
- }
- 
- @media screen and (max-width: 600px) {
-     .menu-scroll-down {
-         padding-bottom: 80px;
-     }
-    
-     .menu-scroll-down h6 {
-         font-size: 10px;
-     }
- }
-     
- @media screen and (max-width:481px) {
-
-    .menu-scroll-down {
-        justify-content: baseline;
-        height: 55px; 
-        margin-top: 80px;
-    }
-    .menu-scroll-down h6 {
-        opacity: 0;
-    }
-
-}
  
 
 
@@ -375,6 +329,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    margin: 60px;
 
 }
 
@@ -433,8 +388,8 @@ main .products-box hr {
 
 .welcome-block {
     background:linear-gradient(354deg, 
-        rgba(246,96,233,1) 0%, 
-        rgba(96,86,198,1) 50%);
+        #f660e9 0%, 
+        #6056c6 50%);
     padding: 80px 80px;
     margin: 0px 0px 50px 0px;
     
@@ -487,7 +442,10 @@ main .products-box hr {
 
 /* ABOUT PAGE */
 .about-hero {
-    background: url(../img/img8.jpg);
+    background: linear-gradient(90deg, 
+        #686868a3, 
+        #00000000), 
+        url(../img/img8.jpg);
     height: 200px;
     background-size: cover;
     margin: 0;
@@ -496,81 +454,123 @@ main .products-box hr {
 }
 
 .about-hero-content {
+    min-width: 200px;
     position: absolute;
-    left: 600px;
-    right: 600px;
-    bottom: -25px;
-    background:#fff;
-    padding: 0;
+    bottom: 70px;
+    left: 0;
+    right: 0;
+    
 }
 
 .about-hero-content h2 {
     margin: 10px;
-    font-size: 20px;
-    color: #222;
+    font-size: 30px;
+    color: #fff;
 }
 
 .about {
-    margin-top: 80px;
-    padding: 50px 100px;
-    max-height: 700px;
+    padding: 50px 10px;
     display: flex;
+    justify-content: center;
 }
 
-
-.bio-card {
-    display: flex;
+@media (max-width: 600px) {
+    .about {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-card {
+        min-width: 100%;
+    }
+    
 }
 
-.about-image {
-    width: 50%; 
-    margin-bottom: 50px;  
+.about-card {
+    width: 50%;
 }
 
-.about img {
-    max-width: 100%;
-    max-height: 100%;
+.about-content {
+    width: 100%;
 }
 
-.bio-content h6 {
+.about-content h6 {
     font-family: 'Playfair Display', sans-serif;
     font-size: 30px;
     font-weight: 400;
     color: #4d4d4d;
     text-align: left;
-    margin-top: 0;
+    margin: 10px 0 5px;
+
+}
+.about-content p {
+    text-align: left;
+    margin: 0 0 10px;
+    font-size: 15px;
 }
 
-.bio-content p {
-    text-align: left;
-    margin-bottom: 50px;
+
+.about-image {
+    min-width: 50%; 
+
+}
+
+
+.about-image img {
+    width: 100%;
+}
+
+.about-card button {
+    margin: 15px; 
 }
 
 /* CONTACT PAGE */
 
 .contact-hero {
-    background: url(../img/hero-background.jpg);
-    height: 400px;
+    background: linear-gradient(90deg, 
+        #686868a3, 
+        #00000000), 
+        url(../img/img8.jpg);
+    height: 200px;
     background-size: cover;
     margin: 0;
     position: relative;
+    
 }
 
 .contact-hero-content {
+    min-width: 200px;
     position: absolute;
+    bottom: 70px;
     left: 0;
     right: 0;
-    bottom: -10px;
+    
+}
+
+.contact-hero-content h2 {
+    margin: 10px;
+    font-size: 30px;
+    color: #fff;
 }
 
 .contact {
-    padding: 50px 0;
+    padding: 50px 10px;
+}
+
+.contact-card {
+    min-width: 50%;
+}
+
+@media (max-width:1000px) {
+    .contact-card {
+        min-width: 80%;
+    }
 }
 
 .contact-content {
-    width: 100%;
+    min-width: 100%;
     display: flex;
     flex-direction: column;
+    margin: 0 20px;
 }
 
 .contact-content label {
@@ -599,13 +599,17 @@ main .products-box hr {
 
 
 .contact-image {
-    width: 100%; 
-    margin-bottom: 50px;  
+    min-width: 50%; 
 }
+
 
 .contact-image img {
     max-width: 100%;
-    max-height: 100%;
+}
+
+
+.contact-card button {
+    margin: 20px 35px; 
 }
 
 /* PRODUCTS PAGE */
@@ -641,8 +645,12 @@ main .products-box hr {
     background: #fff;
     box-shadow: 0px 0px 8px 0px #dedede;
     border-radius: 10px;
-    
+}
 
+@media (max-width: 600px) {
+    .products .products-content {
+        min-width: 300px;
+    }
 }
 
 .products .products-content h6, p {
@@ -658,13 +666,12 @@ main .products-box hr {
     
 }
 
-
-
 .products-content img {
-    background: purple;
-    height: 200px;
     width: 250px;
-    margin: 20px auto;  
+    height: 200px;
+    margin: 20px auto;
+    
+     
 }
 
 .products .products-content  p {
@@ -683,6 +690,8 @@ main .products-box hr {
 .products-content button {
     margin: 10px auto;
 }
+
+
 
 
 

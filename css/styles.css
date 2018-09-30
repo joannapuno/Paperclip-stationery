@@ -146,11 +146,8 @@ a:hover {
     transition: 0.5s;
     transform: translate(0px, 0px);
     z-index: 100;
-    padding: 10px;
     display: none;
 }
-
-
 
 .menu ul {
     display: flex;
@@ -163,10 +160,11 @@ a:hover {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     color: #fff;
+    width: 80%;
 }
 
 .menu li:hover {
-    background: rgb(216, 216, 216);
+    background: #d8d8d841;
 }
 
 .closed {
@@ -404,18 +402,19 @@ main .products-box hr {
 
 
 .products-image-grid {
-    margin: 0;
-    padding: 20px;
-    width: 100%;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
+    
 }
 
-.products-image-grid img {
-    height: 100%;
+.img-container {
     width: 100%;
-    margin-top: 20px;
+    margin-top: 20px;   
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
 }
 
 @media screen and (max-width: 600px) {
@@ -614,20 +613,31 @@ main .products-box hr {
 
 /* PRODUCTS PAGE */
 
-.product-hero {
-    background: url(../img/hero-background.jpg);
-    height: 400px;
+.products-hero {
+    background: linear-gradient(90deg, 
+        #686868a3, 
+        #00000000), 
+        url(../img/img8.jpg);
+    height: 200px;
     background-size: cover;
     margin: 0;
     position: relative;
     
 }
 
-.product-hero-content {
+.products-hero-content {
+    min-width: 200px;
     position: absolute;
+    bottom: 70px;
     left: 0;
     right: 0;
-    bottom: -10px;
+    
+}
+
+.products-hero-content h2 {
+    margin: 10px;
+    font-size: 30px;
+    color: #fff;
 }
 
 .products {
@@ -643,9 +653,18 @@ main .products-box hr {
     flex-direction: column;
     align-items: center;
     background: #fff;
-    box-shadow: 0px 0px 8px 0px #dedede;
-    border-radius: 10px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.263);
+    transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    transition-duration: 0.3s; 
+    transition-timing-function: ease-out;
+    
 }
+
+.products .products-content:hover {
+    transform: translateY(-8px);
+}
+
 
 @media (max-width: 600px) {
     .products .products-content {

@@ -1,9 +1,6 @@
 /* * * * * * * * * * * * * * * * * * * * *
 General
 * * * * * * * * * * * * * * * * * * * * */
-/* * {
-  box-sizing: border-box;
-} */
 
 .wrapper {
   width: 100%;
@@ -20,15 +17,12 @@ h2 {
     font-size: 2.5em;
     margin-bottom: 30px;
     margin-top: 5px;
-    text-align: center;
-     
+    text-align: center;    
 }
-
 
 ul li {
     list-style: none;
 }
-
 
 .parallax-image {
     position: relative;
@@ -45,8 +39,6 @@ ul li {
 
 }
 
-
-
 button {
     color: #fff;
     border:none;
@@ -62,8 +54,6 @@ button:hover {
     background: #980021;
     color: #fff;
 }
-
-
 
 /* * * * * * * * * * * * * * * * * * * * *
 Header
@@ -130,7 +120,9 @@ a:hover {
 }
 
 
-/* MOBILE MENU */
+/* * * * * * * * * * * * * * * * * * * * *
+Mobile Menu
+* * * * * * * * * * * * * * * * * * * * */
 
 .menu {
     width: 200px;
@@ -263,7 +255,7 @@ Hero
     color: #fff;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     .hero {
         height: 500px;
         background-position: 30% 0%;
@@ -275,7 +267,7 @@ Hero
     }
 
     .hero-content {
-        width: 50%;
+        width: 60%;
         margin: 20px;
     }
 
@@ -319,6 +311,7 @@ main {
     width: 100%;
     margin: 30px auto 0;  
 }
+
 /* HOMEPAGE */
 /* Products Block */
 
@@ -361,8 +354,6 @@ main .products-box h6 {
     color: #4d4d4d;
 }
 
-
-
 main .products-box i {
     color: #6056c6;
 }
@@ -380,8 +371,9 @@ main .products-box hr {
     margin: 5px auto;
 }
 
-
-/* WELCOME BLOCK */
+/* * * * * * * * * * * * * * * * * * * * *
+Welcome Block
+* * * * * * * * * * * * * * * * * * * * */
 
 
 .welcome-block {
@@ -400,10 +392,10 @@ main .products-box hr {
     
 }
 
-
 .products-image-grid {
     display: flex;
     flex-wrap: wrap;
+    padding: 100px;
     
 }
 
@@ -439,17 +431,26 @@ main .products-box hr {
     }
 }
 
-/* ABOUT PAGE */
+@media (max-width: 600px) {
+    .products-image-grid {
+        padding: 50px;
+    }
+}
+
+/* * * * * * * * * * * * * * * * * * * * *
+About Page
+* * * * * * * * * * * * * * * * * * * * */
+
 .about-hero {
     background: linear-gradient(90deg, 
         #686868a3, 
         #00000000), 
-        url(../img/img8.jpg);
+        url(../img/img11.jpg);
+    background-attachment: fixed;
     height: 200px;
     background-size: cover;
     margin: 0;
-    position: relative;
-    
+    position: relative;   
 }
 
 .about-hero-content {
@@ -457,8 +458,7 @@ main .products-box hr {
     position: absolute;
     bottom: 70px;
     left: 0;
-    right: 0;
-    
+    right: 0; 
 }
 
 .about-hero-content h2 {
@@ -471,17 +471,6 @@ main .products-box hr {
     padding: 50px 10px;
     display: flex;
     justify-content: center;
-}
-
-@media (max-width: 600px) {
-    .about {
-        flex-direction: column;
-        align-items: center;
-    }
-    .about-card {
-        min-width: 100%;
-    }
-    
 }
 
 .about-card {
@@ -498,7 +487,7 @@ main .products-box hr {
     font-weight: 400;
     color: #4d4d4d;
     text-align: left;
-    margin: 10px 0 5px;
+    margin: 0 0 20px;
 
 }
 .about-content p {
@@ -510,9 +499,9 @@ main .products-box hr {
 
 .about-image {
     min-width: 50%; 
+    margin-bottom: 30px;
 
 }
-
 
 .about-image img {
     width: 100%;
@@ -522,13 +511,27 @@ main .products-box hr {
     margin: 15px; 
 }
 
-/* CONTACT PAGE */
+@media (max-width: 700px) {
+    .about {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-card {
+        min-width: 100%;
+    }
+    
+}
+
+/* * * * * * * * * * * * * * * * * * * * *
+Contact Page
+* * * * * * * * * * * * * * * * * * * * */
 
 .contact-hero {
     background: linear-gradient(90deg, 
         #686868a3, 
         #00000000), 
-        url(../img/img8.jpg);
+        url(../img/img11.jpg);
+    background-attachment: fixed;
     height: 200px;
     background-size: cover;
     margin: 0;
@@ -559,11 +562,6 @@ main .products-box hr {
     min-width: 50%;
 }
 
-@media (max-width:1000px) {
-    .contact-card {
-        min-width: 80%;
-    }
-}
 
 .contact-content {
     min-width: 100%;
@@ -577,6 +575,10 @@ main .products-box hr {
     margin: 10px 0 5px 0;
 }
 
+.contact-content input,label {
+    margin-bottom: 15px;
+}
+
 .contact-content label, p, h6 {
     font-family: 'Roboto',sans-serif;
 }
@@ -587,7 +589,7 @@ main .products-box hr {
     font-weight: 400;
     color: #4d4d4d;
     text-align: left;
-    margin: 10px 0 5px;
+    margin: 0;
 
 }
 .contact-content p {
@@ -599,25 +601,39 @@ main .products-box hr {
 
 .contact-image {
     min-width: 50%; 
+    margin-bottom: 30px;
 }
-
 
 .contact-image img {
     max-width: 100%;
 }
 
-
 .contact-card button {
     margin: 20px 35px; 
 }
 
-/* PRODUCTS PAGE */
+@media (max-width:1000px) {
+    .contact-card {
+        min-width: 80%;
+    }
+}
+
+@media (max-width:800px) {
+    .contact-image {
+        display: none;
+    }
+}
+
+/* * * * * * * * * * * * * * * * * * * * *
+Products Page
+* * * * * * * * * * * * * * * * * * * * */
 
 .products-hero {
     background: linear-gradient(90deg, 
         #686868a3, 
         #00000000), 
-        url(../img/img8.jpg);
+        url(../img/img11.jpg);
+    background-attachment: fixed;
     height: 200px;
     background-size: cover;
     margin: 0;
@@ -665,13 +681,6 @@ main .products-box hr {
     transform: translateY(-8px);
 }
 
-
-@media (max-width: 600px) {
-    .products .products-content {
-        min-width: 300px;
-    }
-}
-
 .products .products-content h6, p {
     margin: 10px;
 }
@@ -681,23 +690,19 @@ main .products-box hr {
     font-size: 18px;
     font-weight: 700;
     color: #4d4d4d;
-    text-align: center;
-    
+    text-align: center;  
 }
 
 .products-content img {
     width: 250px;
     height: 200px;
-    margin: 20px auto;
-    
-     
+    margin: 20px auto;   
 }
 
 .products .products-content  p {
     font-family: 'Roboto' sans-serif;
     font-size: 15px;
     line-height: 1.5em;
-
 }
 
 .products .products-content  hr {
@@ -710,12 +715,15 @@ main .products-box hr {
     margin: 10px auto;
 }
 
+@media (max-width: 600px) {
+    .products .products-content {
+        min-width: 300px;
+    }
+}
 
-
-
-
-
-/* PRE-FOOTER */
+/* * * * * * * * * * * * * * * * * * * * *
+PRE-FOOTER
+* * * * * * * * * * * * * * * * * * * * */
 
 .pre-footer-wrapper {
     background: rgb(210, 210, 210);
@@ -821,7 +829,6 @@ Footer
     position: relative;
     top: -10px;
 
-
 }
 footer {
     width: 100%;
@@ -831,9 +838,6 @@ footer {
         rgba(246,96,233,1) 0%, 
         rgba(96,86,198,1) 50%);
 }
-
-
-
 
 .container {
     padding: 20px;
